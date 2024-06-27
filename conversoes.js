@@ -5,6 +5,7 @@
 // Acontece quando o javascript cnverte o numero em string
 // e depois compara
 // as 2 strings
+
 const numero = 456;
 const numeroString = Number("456");
 console.log (numero === numeroString);
