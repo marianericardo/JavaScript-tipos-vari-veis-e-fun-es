@@ -1,0 +1,20 @@
+// Definindo a altura e o sexo
+let altura = 1.75;
+let sexo = 'M'; 
+
+
+let pesoIdeal;
+
+// Cálculo do peso ideal baseado no sexo
+if (sexo === 'M') {
+    pesoIdeal = (72.7 * altura) - 58; // Fórmula para homens
+} else if (sexo === 'F') {
+    pesoIdeal = (62.1 * altura) - 44.7; // Fórmula para mulheres
+} else {
+    console.log("Sexo inválido. Use 'M' para masculino ou 'F' para feminino.");
+}
+
+// Exibindo o resultado
+if (pesoIdeal) {
+    console.log(`Peso ideal: ${pesoIdeal.toFixed(2)} kg`);
+}
