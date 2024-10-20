@@ -1,0 +1,21 @@
+let horaInicio = 22; 
+let minutoInicio = 30; 
+let horaTermino = 1; 
+let minutoTermino = 15;
+
+console.log(`Início: ${horaInicio}h${minutoInicio}min`);
+console.log(`Término: ${horaTermino}h${minutoTermino}min`);
+
+// Convertendo tudo para minutos
+let totalMinutosInicio = horaInicio * 60 + minutoInicio;
+let totalMinutosTermino = horaTermino * 60 + minutoTermino + 24 * 60; // Adicionando 24 horas para o dia seguinte
+
+// Calculando a duração em minutos
+let duracaoMinutos = totalMinutosTermino - totalMinutosInicio;
+
+// Convertendo a duração de volta para horas e minutos
+let horasDuracao = Math.floor(duracaoMinutos / 60);
+let minutosDuracao = duracaoMinutos % 60;
+
+// Exibindo a duração do jogo
+console.log(`Duração do jogo: ${horasDuracao} hora(s) e ${minutosDuracao} minuto(s)`);
