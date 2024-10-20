@@ -1,0 +1,33 @@
+let saldoMedio = 350; 
+
+let credito = 0; // Inicializando o crédito
+
+// Cálculo do crédito baseado no saldo médio
+if (saldoMedio >= 0 && saldoMedio <= 200) {
+    credito = 0; // Nenhum crédito
+} else
+  if (saldoMedio >= 201 && saldoMedio <= 400) {
+    credito = saldoMedio * 0.20; // 20% do saldo médio
+} else 
+    if (saldoMedio >= 401 && saldoMedio <= 600) {
+    credito = saldoMedio * 0.30; // 30% do saldo médio
+} else 
+      if (saldoMedio > 600) {
+    credito = saldoMedio * 0.40; // 40% do saldo médio
+}
+
+console.log("Saldo médio: R$ " + saldoMedio.toFixed(2));
+console.log("Valor do crédito: R$ " + credito.toFixed(2));
+
+
+
+
+
+
+
+
+
+
+
+
+
