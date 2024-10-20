@@ -1,0 +1,12 @@
+let horaInicio = 22; 
+let horaFinal = 2;   
+
+let duracao;
+
+if (horaFinal >= horaInicio) {
+    duracao = horaFinal - horaInicio; 
+} else {
+    duracao = (24 - horaInicio) + horaFinal; 
+}
+
+console.log(`Duração do jogo: ${duracao} horas`);
