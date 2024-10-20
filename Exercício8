@@ -1,0 +1,23 @@
+// Definindo o código do item e a quantidade
+let codigoItem = 101; 
+let quantidade = 3; 
+
+// Definindo os preços dos itens em um objeto
+const precos = {
+    100: 1.20, // Cachorro quente
+    101: 1.30, // Bauru simples
+    102: 1.50, // Bauru com ovo
+    103: 1.20, // Hambúrguer
+    104: 1.30, // Cheeseburguer
+    105: 1.00  // Refrigerante
+};
+
+let preco = precos[codigoItem];
+
+if (preco) {
+    let valorTotal = preco * quantidade;
+    console.log(`Valor a ser pago: R$ ${valorTotal`);
+} else {
+  
+    console.log("Código do item inválido.");
+}
