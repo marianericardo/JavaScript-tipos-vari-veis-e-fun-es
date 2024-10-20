@@ -1,0 +1,6 @@
+ const nota1= 6;
+ const nota2= 5;
+ const nota3= 4;
+
+let media = (nota1 + nota2 + nota3)/ 3;
+    return media >= 6 ? "Aprovado" : 
