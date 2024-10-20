@@ -1,0 +1,25 @@
+
+let codigoProduto = 1324; 
+let quantidadeComprada = 3; 
+
+let precos = {
+    1001: 5.32,
+    1324: 6.45,
+    6548: 2.37,
+    987: 5.32,
+    7623: 6.45
+};
+
+let precoUnitario = precos[codigoProduto];
+
+
+let precoTotal;
+
+if (precoUnitario !== undefined) {
+    // Calculando o preço total
+    precoTotal = precoUnitario * quantidadeComprada;
+    // Exibindo o resultado
+    console.log("preçoTotal");
+} else {
+    console.log("Código do produto inválido.");
+}
