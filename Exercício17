@@ -1,0 +1,49 @@
+let i = 1; 
+let a = 5; 
+let b = 2; 
+let c = 4; 
+
+
+console.log("Valores lidos: a =", a, ", b =", b, ", c =", c);
+
+// Função para ordenar os valores
+function ordenarValores(a, b, c, ordem) {
+    let valores = [a, b, c];
+    if (ordem === 'crescente') {
+        valores.sort((x, y) => x - y);
+    } else {
+        valores.sort((x, y) => y - x);
+    }
+    return valores;
+}
+
+// Processando com base no valor de i
+if (i === 1) {
+    // Ordem crescente
+    let resultado = ordenarValores(a, b, c, 'crescente');
+    console.log("Ordem crescente:", resultado[0], resultado[1], resultado[2]);
+} else if (i === 2) {
+    // Ordem decrescente
+    let resultado = ordenarValores(a, b, c, 'decrescente');
+    console.log("Ordem decrescente:", resultado[0], resultado[1], resultado[2]);
+} else if (i === 3) {
+    // Maior entre a, b, c no meio
+    let maior = Math.max(a, b, c);
+    let menor1, menor2;
+
+    if (maior === a) {
+        menor1 = b;
+        menor2 = c;
+    } else if (maior === b) {
+        menor1 = a;
+        menor2 = c;
+    } else {
+        menor1 = a;
+        menor2 = b;
+    }
+
+    console.log("Maior no meio:", menor1, maior, menor2);
+} else {
+    console.log("Valor de i inválido. Deve ser 1, 2 ou 3.");
+}
+
