@@ -1,0 +1,20 @@
+let a = 5; 
+let b = 4; 
+let c = 3; 
+
+// Verificando se formam um triângulo
+if (a < b + c && b < a + c && c < a + b) {
+   
+  // Cálculo da semiperímetro
+    let s = (a + b + c) / 2;
+
+    // Cálculo da área usando a fórmula de Heron
+    let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+    
+    // Exibindo a área
+    console.log(`Os valores formam um triângulo.`);
+    console.log(`A área do triângulo é: ${'área'});
+} else {
+    // Exibindo os valores lidos
+    console.log(`Os valores lidos não formam um triângulo: ${a}, ${b}, ${c}`);
+}
