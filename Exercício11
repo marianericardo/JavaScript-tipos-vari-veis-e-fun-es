@@ -1,0 +1,31 @@
+
+let nota1 = 7.0; 
+let nota2 = 8.0; 
+let nota3 = 6.0;
+
+// Opção escolhida pelo usuário
+let opcao = 1; // 1 - Aritmética, 2 - Ponderada, 3 - Harmônica
+
+let media;
+
+if (opcao === 1) {
+    // Média aritmética
+    media = (nota1 + nota2 + nota3) / 3;
+} else 
+  if (opcao === 2) {
+    // Média ponderada (pesos 3, 3, 4)
+    media = (nota1 * 3 + nota2 * 3 + nota3 * 4) / (3 + 3 + 4);
+} else 
+    if (opcao === 3) {
+    // Média harmônica
+    media = 3 / ((1 / nota1) + (1 / nota2) + (1 / nota3));
+} else {
+    console.log("Opção inválida.");
+}
+
+// Exibindo o resultado
+if (media !== undefined) {
+    console.log(`Média calculada: ${media.toFixed(2)}`);
+}
+
+
