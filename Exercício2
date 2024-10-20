@@ -1,0 +1,20 @@
+const a = 5;
+const  b = 10;
+const  c = 7;
+
+console.log("Valores:");
+console.log("a:", a);
+console.log("b:", b);
+console.log("c:", c);
+
+const maior;
+
+if (a > b && a > c) {
+    maior = a;
+} else if (b > a && b > c) {
+    maior = b;
+} else {
+    maior = c;
+}
+
+console.log(maior + " é o maior.");
