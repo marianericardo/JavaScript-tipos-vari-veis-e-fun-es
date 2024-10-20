@@ -1,0 +1,15 @@
+let a = 8; 
+let b = 4; 
+
+console.log("Valores:");
+console.log("a:", a);
+console.log("b:", b);
+
+// vendo se são múltiplos 
+
+if (a % b === 0 || b % a === 0) {
+    console.log("São múltiplos");
+} else {
+    console.log("Não são múltiplos");
+}
+
