@@ -1,0 +1,41 @@
+let valor = 387; 
+console.log("Valor lido: R$", valor);
+
+
+let notas100 = 0;
+let notas50 = 0;
+let notas10 = 0;
+let notas5 = 0;
+let notas1 = 0;
+
+// Calculando a quantidade de notas
+if (valor >= 100) {
+    notas100 = Math.floor(valor / 100);
+    valor %= 100;
+}
+
+if (valor >= 50) {
+    notas50 = Math.floor(valor / 50);
+    valor %= 50;
+}
+
+if (valor >= 10) {
+    notas10 = Math.floor(valor / 10);
+    valor %= 10;
+}
+
+if (valor >= 5) {
+    notas5 = Math.floor(valor / 5);
+    valor %= 5;
+}
+
+if (valor >= 1) {
+    notas1 = valor; // O restante é a quantidade de notas de 1
+}
+
+console.log("Notas necessárias:");
+console.log("Notas de R$ 100:", notas100);
+console.log("Notas de R$ 50:", notas50);
+console.log("Notas de R$ 10:", notas10);
+console.log("Notas de R$ 5:", notas5);
+console.log("Notas de R$ 1:", notas1);
