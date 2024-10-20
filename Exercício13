@@ -1,0 +1,24 @@
+
+let codigoProduto = 'XYPK'; 
+let quantidadeComprada = 2; 
+
+let precos = {
+    'ABCD': 5.30,
+    'XYPK': 6.00,
+    'KLMP': 3.20,
+    'QRST': 2.50
+};
+
+let precoUnitario = precos[codigoProduto];
+
+let precoTotal;
+
+if (precoUnitario !== undefined) {
+  
+    precoTotal = precoUnitario * quantidadeComprada;
+    
+    console.log("precoTotal");
+} else 
+{
+    console.log("Código do produto inválido.");
+}
