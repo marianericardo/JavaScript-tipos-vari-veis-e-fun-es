@@ -1,0 +1,23 @@
+let codigoAluno = 123; 
+let nota1 = 7;
+let nota2 = 5; 
+let nota3 = 8; 
+
+console.log("Código do Aluno:",codigoAluno);
+console.log("Notas:");
+console.log("Nota 1:", nota1);
+console.log("Nota 2:", nota2);
+console.log("Nota 3:", nota3);
+
+let maiorNota = Math.max(nota1, nota2, nota3);
+
+let mediaPonderada = (maiorNota * 4 + nota1 * 3 + nota2 * 3 + nota3 * 3 - maiorNota * 3) / 10;
+
+console.log("Média Ponderada:", mediaPonderada);
+
+
+if (mediaPonderada >= 5) {
+    console.log("APROVADO");
+} else {
+    console.log("REPROVADO");
+}
