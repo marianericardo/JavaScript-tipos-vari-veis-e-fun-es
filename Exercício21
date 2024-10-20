@@ -1,0 +1,42 @@
+// Definindo os dados do aluno
+let numeroIdentificacao = 12345;
+let nota1 = 3.0;
+let nota2 = 7.0; 
+let nota3 = 9.0; 
+let mediaExercicios = 6.5;
+
+// Exibindo os dados do aluno
+console.log("Número de Identificação:", numeroIdentificacao);
+console.log("Notas: ");
+console.log("Nota 1:", nota1);
+console.log("Nota 2:", nota2);
+console.log("Nota 3:", nota3);
+console.log("Média dos Exercícios:", mediaExercicios);
+
+// Calculando a média de aproveitamento
+let MA = (nota1 + (nota2 * 2) + (nota3 * 3) + mediaExercicios) / 7;
+
+// Determinando o conceito
+let conceito;
+if (MA >= 9.0) {
+    conceito = 'A';
+} else if (MA >= 7.5) {
+    conceito = 'B';
+} else if (MA >= 6.0) {
+    conceito = 'C';
+} else if (MA >= 4.0) {
+    conceito = 'D';
+} else {
+    conceito = 'E';
+}
+
+// Exibindo a média de aproveitamento e o conceito
+console.log("MA");
+console.log("Conceito:", conceito);
+
+// Verificando a situação do aluno
+if (conceito === 'A' || conceito === 'B' || conceito === 'C') {
+    console.log("Situação: APROVADO");
+} else {
+    console.log("Situação: REPROVADO");
+}
