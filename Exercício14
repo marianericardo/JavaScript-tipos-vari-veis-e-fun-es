@@ -1,0 +1,28 @@
+let salarioAntigo = 3000; 
+let codigoCargo = 102; 
+
+// Inicializando o percentual de aumento
+let percentualAumento;
+
+// Definindo os percentuais de aumento
+if (codigoCargo === 101) {
+    percentualAumento = 0.10; // 10% para Gerente
+} else if (codigoCargo === 102) {
+    percentualAumento = 0.20; // 20% para Engenheiro
+} else if (codigoCargo === 103) {
+    percentualAumento = 0.30; // 30% para Técnico
+} else {
+    percentualAumento = 0.40; // 40% sem estar na tabela
+}
+
+//  novo salário
+let novoSalario = salarioAntigo * (1 + percentualAumento);
+
+//diferença 
+let diferenca = novoSalario - salarioAntigo;
+
+// Exibindo os resultados
+console.log(`Salário antigo: R$ ${salarioAntigo}`);
+console.log(`Novo salário: R$ ${novoSalario}`);
+console.log(`Diferença: R$ ${diferenca}`);
+
