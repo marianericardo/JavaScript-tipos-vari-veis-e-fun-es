@@ -1,0 +1,21 @@
+const ipi = 15; 
+
+let codigoPeca1 = 101; 
+let valorUnitarioPeca1 = 50; 
+let quantidadePeca1 = 3; 
+
+
+let codigoPeca2 = 202; 
+let valorUnitarioPeca2 = 30; 
+let quantidadePeca2 = 2; 
+
+
+let totalPeca1 = valorUnitarioPeca1 * quantidadePeca1;
+let totalPeca2 = valorUnitarioPeca2 * quantidadePeca2;
+let valorTotalSemIpi = totalPeca1 + totalPeca2;
+
+
+let valorTotalComIpi = valorTotalSemIpi * (ipi / 100 + 1);
+
+/
+console.log("Valor total a ser pago: R$", valorTotalComIpi.toFixed(2));
