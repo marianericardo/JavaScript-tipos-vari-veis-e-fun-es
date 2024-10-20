@@ -1,0 +1,17 @@
+let indicePoluicao = 0.35; 
+console.log("Índice de Poluição Medido:", indicePoluicao);
+
+if (indicePoluicao >= 0.5) {
+    console.log("Notificação: Todas as indústrias dos Grupos 1, 2 e 3 devem paralisar suas atividades.");
+} else 
+if (indicePoluicao >= 0.4) {
+    console.log("Notificação: Indústrias do Grupo 1 e 2 devem paralisar suas atividades.");
+} else 
+if (indicePoluicao >= 0.3) {
+    console.log("Notificação: Indústrias do Grupo 1 devem paralisar suas atividades.");
+} else 
+if (indicePoluicao < 0.05 || indicePoluicao > 0.25) {
+    console.log("Índice de poluição fora do intervalo aceitável.");
+} else {
+    console.log("Índice de poluição aceitável, nenhuma notificação necessária.");
+}
